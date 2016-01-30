@@ -19,7 +19,7 @@ colorscheme atom-dark-256
 let mapleader = ','                     "my leader is ',', not the default '\'
 set number
 set backspace=indent,eol,start          "backspace works as usual - deletes stuff
-
+set runtimepath^=~/.vim/bundle/ctrlp.vim 
 
 "-------------Search---------------"
 
@@ -68,4 +68,4 @@ augroup END
 "windowswap.vim         git submodule add https://github.com/wesQ3/vim-windowswap.git bundle/windowswap
 "nerdtree		git submodule add https://github.com/scrooloose/nerdtree.git bundle/nerdtree
 "nerdtree-git-plugin	git submodule add https://github.com/Xuyuanp/nerdtree-git-plugin.git bundle/nerdtree-git-plugin
-"
+"ctrlp			git submodule add https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
