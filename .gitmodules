@@ -1,0 +1,6 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/windowswap"]
+	path = bundle/windowswap
+	url = https://github.com/wesQ3/vim-windowswap.git
