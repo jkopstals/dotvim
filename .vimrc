@@ -58,8 +58,8 @@ augroup END
 
 "open a NERDTree automatically when vim starts up if no files were specified
 "if open always, then just enable: "autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
