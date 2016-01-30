@@ -60,6 +60,5 @@ augroup END
 "-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
 "pathogen.vim           https://github.com/tpope/vim-pathogen
-"fugitive.vim           https://github.com/tpope/vim-fugitive
-"windowswap.vim         https://github.com/wesQ3/vim-windowswap
-"
+"fugitive.vim           git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+"windowswap.vim         git submodule add https://github.com/wesQ3/vim-windowswap.git bundle/windowswap
