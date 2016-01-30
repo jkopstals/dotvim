@@ -64,5 +64,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
 "pathogen.vim           https://github.com/tpope/vim-pathogen
-"fugitive.vim           git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+"fugitive.vim           git submodule add https://github.com/tpope/vim-fugitive.git bundle/fugitive
 "windowswap.vim         git submodule add https://github.com/wesQ3/vim-windowswap.git bundle/windowswap
+"nerdtree		git submodule add https://github.com/scrooloose/nerdtree.git bundle/nerdtree
+"nerdtree-git-plugin	git submodule add https://github.com/Xuyuanp/nerdtree-git-plugin.git bundle/nerdtree-git-plugin
+"
