@@ -1,6 +1,8 @@
 #My VIM config
-git clone https://github.com/jkopstals/dotvim.git ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
-cd ~/.vim
-git submodule init
-git submodule update
+on a new server:
+
+* git clone https://github.com/jkopstals/dotvim.git ~/.vim
+* ln -s ~/.vim/.vimrc ~/.vimrc
+* cd ~/.vim
+* git submodule init
+* git submodule update
