@@ -1,5 +1,6 @@
 #My VIM config
 on a new server:
+
 *git clone https://github.com/jkopstals/dotvim.git ~/.vim
 *ln -s ~/.vim/.vimrc ~/.vimrc
 *cd ~/.vim
