@@ -26,6 +26,16 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hlsearch
 set incsearch
 
+"-------------syntastic---------------"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 "-------------Mappings---------------"
 
 "easy vimrc edit
@@ -70,3 +80,4 @@ augroup END
 "nerdtree-git-plugin	git submodule add https://github.com/Xuyuanp/nerdtree-git-plugin.git bundle/nerdtree-git-plugin
 "ctrlp			git submodule add https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
 "syntastic.vim		git submodule add https://github.com/scrooloose/syntastic.git bundle/syntastic
+"vim-airline		git submodule add https://github.com/vim-airline/vim-airline bundle/vim-airline
