@@ -68,5 +68,5 @@ augroup END
 "windowswap.vim         git submodule add https://github.com/wesQ3/vim-windowswap.git bundle/windowswap
 "nerdtree		git submodule add https://github.com/scrooloose/nerdtree.git bundle/nerdtree
 "nerdtree-git-plugin	git submodule add https://github.com/Xuyuanp/nerdtree-git-plugin.git bundle/nerdtree-git-plugin
-"ctrlp			git submodule add https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
+"ctrlp			git submodule add https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
 "syntastic.vim		git submodule add https://github.com/scrooloose/syntastic.git bundle/syntastic
