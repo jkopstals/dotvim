@@ -19,3 +19,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/phpcomplete"]
+	path = bundle/phpcomplete
+	url = https://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git

@@ -90,3 +90,5 @@ augroup END
 "ctrlp			git submodule add https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
 "syntastic.vim		git submodule add https://github.com/scrooloose/syntastic.git bundle/syntastic
 "vim-airline		git submodule add https://github.com/vim-airline/vim-airline bundle/vim-airline
+"phpcomplete		git submodule add https://github.com/shawncplus/phpcomplete.vim.git bundle/phpcomplete
+"supertab		git submodule add https://github.com/ervandew/supertab.git bundle/supertab
