@@ -26,6 +26,10 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hlsearch
 set incsearch
 
+"-------------Search---------------"
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+set completeopt=longest,menuone
+
 "-------------syntastic---------------"
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
