@@ -75,10 +75,18 @@ augroup autosourcing
         autocmd BufWritePost .vimrc source %
 augroup END
 
+"-------------Auto-Commands----------"
+"
 "open a NERDTree automatically when vim starts up if no files were specified
 "if open always, then just enable: "autocmd vimenter * NERDTree
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let g:NERDTreeHijackNetrw=0
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'V'
+
+nmap <C-N> :NERDTreeToggle<cr>
+
 
 "-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
@@ -92,3 +100,4 @@ augroup END
 "vim-airline		git submodule add https://github.com/vim-airline/vim-airline bundle/vim-airline
 "phpcomplete		git submodule add https://github.com/shawncplus/phpcomplete.vim.git bundle/phpcomplete
 "supertab		git submodule add https://github.com/ervandew/supertab.git bundle/supertab
+"vim-vinegar 		git submodule add https://github.com/tpope/vim-vinegar.git bundle/vim-vinegar
