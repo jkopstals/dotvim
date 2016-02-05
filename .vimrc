@@ -1,13 +1,13 @@
 if &term =~ "xterm"
-  if has("terminfo")
-        set t_Co=256
-        set t_Sf=<Esc>[3%p1%dm
-        set t_Sb=<Esc>[4%p1%dm
-  else
-        set t_Co=8
-        set t_Sf=<Esc>[3%dm
-        set t_Sb=<Esc>[4%dm
-  endif
+	if has("terminfo")
+		set t_Co=256
+		set t_Sf=<Esc>[3%p1%dm
+		set t_Sb=<Esc>[4%p1%dm
+	else
+		set t_Co=8
+		set t_Sf=<Esc>[3%dm
+		set t_Sb=<Esc>[4%dm
+	endif
 endif
 "set t_Co=256 "or simply
 
@@ -71,8 +71,13 @@ nmap <C-L> <C-W><C-L>
 
 "automatically source vimrc when saved
 augroup autosourcing
-        autocmd!
-        autocmd BufWritePost .vimrc source %
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
+
+augroup sparkup_types
+	autocmd!
+	autocmd FileType php runtime! ftplugin/html/sparkup.vim
 augroup END
 
 "-------------Auto-Commands----------"
@@ -101,3 +106,4 @@ nmap <C-N> :NERDTreeToggle<cr>
 "phpcomplete		git submodule add https://github.com/shawncplus/phpcomplete.vim.git bundle/phpcomplete
 "supertab		git submodule add https://github.com/ervandew/supertab.git bundle/supertab
 "vim-vinegar 		git submodule add https://github.com/tpope/vim-vinegar.git bundle/vim-vinegar
+"sparkup 		git submodule add https://github.com/rstacruz/sparkup.git bundle/sparkup
