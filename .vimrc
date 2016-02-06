@@ -26,7 +26,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hlsearch
 set incsearch
 
-"-------------Search---------------"
+"-------------Autocomplete---------------"
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 set completeopt=longest,menuone
 
@@ -53,6 +53,9 @@ nmap <Leader>ev :tabedit ~/.vimrc<cr>
 "simple hlsearch remove
 nmap <Leader><space> :nohlsearch<cr>
 
+"Quickly browse to any tag/symbol in the project.
+""Tip: run ctags -R to regenerated the index.
+nmap <Leader>f :tag<space>
 
 "-------------Splits---------------"
 set splitbelow
@@ -80,7 +83,7 @@ augroup sparkup_types
 	autocmd FileType php runtime! ftplugin/html/sparkup.vim
 augroup END
 
-"-------------Auto-Commands----------"
+"-------------NERDTree----------"
 "
 "open a NERDTree automatically when vim starts up if no files were specified
 "if open always, then just enable: "autocmd vimenter * NERDTree
@@ -92,6 +95,10 @@ let g:NERDTreeDirArrowCollapsible = 'V'
 
 nmap <C-N> :NERDTreeToggle<cr>
 
+"-------------CtrlP----------"
+let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+nmap <C-r> :CtrlPBufTag<cr>
 
 "-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
