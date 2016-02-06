@@ -101,6 +101,11 @@ let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 nmap <C-r> :CtrlPBufTag<cr>
 
 "-------------Downloads----------"
+"
+"remember Vinegar uses dash "-" for going back up directory tree, and also
+"from file
+
+"-------------Downloads----------"
 "vim-atom-dark          https://github.com/gosukiwi/vim-atom-dark
 "pathogen.vim           https://github.com/tpope/vim-pathogen
 "fugitive.vim           git submodule add https://github.com/tpope/vim-fugitive.git bundle/fugitive
