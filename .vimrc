@@ -17,9 +17,19 @@ filetype plugin indent on
 syntax enable "syntax enable should be after terminal t_Co directive
 colorscheme atom-dark-256
 let mapleader = ','                     "my leader is ',', not the default '\'
-set number
+set relativenumber      		"shows relative position of the cursor to ease movement
 set backspace=indent,eol,start          "backspace works as usual - deletes stuff
 set runtimepath^=~/.vim/bundle/ctrlp.vim 
+
+"-------------Tabs and spaces------"
+set autoindent                 "always set autoindenting on
+set copyindent                 "copy the previous indentation on autoindenting"
+set expandtab
+set shiftwidth=4               " nombre d'espace apres un '>>'
+set shiftround                 " use multiple of shiftwidth when indenting with '<' and '>'"
+set tabstop=4                  " nombre de place que prend une tabulatio
+set smarttab
+
 
 "-------------Search---------------"
 
@@ -71,6 +81,11 @@ nmap <C-L> <C-W><C-L>
 "this functionality is provided by vim-windowswap
 
 "-------------Auto-Commands----------"
+
+"delete spaces at end of line
+autocmd BufWritePre !*.xml silent! %s/[\r \t]\+$//
+" retab to replace tab by space when you write
+autocmd BufWritePre *.php :set et|retab
 
 "automatically source vimrc when saved
 augroup autosourcing
